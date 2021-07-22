@@ -1,0 +1,88 @@
+<form [formGroup]="datosPersonaNatural" (ngSubmit)="Editar(datosPersonaNatural.value)"  class="Natural-card-div">
+    <div class="panel panel-default">
+    <div class="panel-heading">
+         <p>La emprese se encuentra registrada en la camara de comercio de medellin para antioquia.Para acceder al servicio de tramites virtuales se utilizaran los datos reportados en el registro</p>
+         <p>Los campos marcados con asterisco(*) son obligatorios</p>
+        <div class="row ">
+                  <div class="col-md-6">
+                    <span class="help-block text-muted small-font" >Identificacion o Nit*</span>
+                      <input type="number"  min="1"  max="115" class="form-control" formControlName="identificacion"/>
+                  </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-6">
+              <span class="help-block text-muted small-font" >Tipo Identificacion*</span>
+                <select class="form-control" disabled>
+                    <option value="1">Persona Natural</option>
+                    <option value="2">Persona Juridica</option>
+                </select>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-6">
+              <span class="help-block text-muted small-font" >Nombres*</span>
+                <input type="text" maxlength="50" class="form-control" formControlName="nombre" required/>
+                
+              </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-6">
+              <span class="help-block text-muted small-font" >Apellidos*</span>
+                <input type="text" maxlength="50" class="form-control" formControlName="apellido"/>
+            </div>
+        </div>
+        <div class="row ">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                      <span class="help-block text-muted small-font" > Via</span>
+                      <input type="text" maxlength="10" class="form-control" formControlName="identificacion"/>
+                  </div>
+             <div class="col-md-1 col-sm-1 col-xs-1">
+                      <span class="help-block text-muted small-font" >  Nro*</span>
+                      <input type="number" min="1"  max="115" class="form-control" formControlName="nro1"/>
+                  </div>
+            <div class="col-md-1 col-sm-1 col-xs-1">
+                      <span class="help-block text-muted small-font" >  Letra</span>
+                      <input type="text" maxlength="2" class="form-control" formControlName="letra1"/>
+                  </div>
+                  <div class="col-md-1 col-sm-1 col-xs-1">
+                    <span class="help-block text-muted small-font" >  Nro*</span>
+                    <input type="number" min="1"  max="115" class="form-control" formControlName="nro2"/>
+                </div>
+                  <div class="col-md-1 col-sm-1 col-xs-1">
+                    <span class="help-block text-muted small-font" >  Letra</span>
+                    <input type="text" maxlength="2" class="form-control" formControlName="letra2"/>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                    <span class="help-block text-muted small-font" > Nro y Complementos</span>
+                    <input type="text" maxlength="20" class="form-control" formControlName="nroAndComplements"/>
+                </div>
+        </div>
+
+        <div class="row ">
+                  <div class="col-md-6 pad-adjust">
+                    <span class="help-block text-muted small-font" > Direccion</span>
+                    <input type="text" maxlength="10" class="form-control"  placeholder="Cra 20 a 53 94" />
+                  </div>
+              </div>
+              <div class="row ">
+                <div class="col-md-6 pad-adjust">
+                  <span class="help-block text-muted small-font" > Municipio</span>
+                  <input type="text" maxlength="10" class="form-control" formControlName="municipio"/>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-6 pad-adjust">
+                  <span class="help-block text-muted small-font" > Telefono</span>
+                  <input type="text" maxlength="10" class="form-control" formControlName="telefono"/>
+                </div>
+            </div>
+        <div class="row ">
+            <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                <input type="submit"  class="btn btn-danger" value="Continuar" />
+                <input type="submit"  class="btn btn-dark" value="<- Regresar" />
+            </div>
+        </div>
+         
+    </div>
+</div>
+</form>

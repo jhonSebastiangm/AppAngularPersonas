@@ -1,0 +1,27 @@
+
+<form [formGroup]="PersonaNatural" (ngSubmit)="Buscar(PersonaNatural.value)" class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Inscripcion al servicio </legend>
+<p>Ingrese el nit de la persona natural o juridica para la que realiza el tramite,sin incluir el digito de verificacion, Luego seleccione continuar para completar su solicitud </p>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Identificacion">Identificacion</label>  
+  <div class="col-md-4">
+  <input formControlName="identificacion" id="Identificacion" name="Identificacion" type="text"  class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="save"></label>
+  <div class="col-md-8">
+    <button id="save" name="save" class="btn btn-danger">Continuar</button>
+    <button id="clear" name="clear" class="btn btn-dark">Regresar</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
